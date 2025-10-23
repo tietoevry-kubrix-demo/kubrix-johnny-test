@@ -1,5 +1,6 @@
 teamName: kubrix
 appName: johnny-test
+appType: helm
 repoUrl: https://github.com/tietoevry-kubrix-demo/kubrix-johnny-test
 createAppNamespace: true
 stages:
