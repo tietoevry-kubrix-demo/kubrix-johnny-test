@@ -6,7 +6,7 @@ ingress:
     dns.gardener.cloud/dnsnames: kubrix-johnny-test-dev.tietoevry.platform-engineer.cloud
     dns.gardener.cloud/ttl: "180"
   hosts:
-    - host: kubrix-johnny-test-dev.tietoevry.platform-engineer.cloud
+    - host: kubrix-johnny-test-{{ .Values.kubriXIngressDomain }}
       paths:
         - path: /
           pathType: ImplementationSpecific
