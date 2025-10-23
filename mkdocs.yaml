@@ -1,0 +1,8 @@
+site_name: "johnny-test"
+site_description: "Documentation for johnny-test"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
