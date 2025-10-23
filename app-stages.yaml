@@ -4,7 +4,7 @@ repoUrl: https://github.com/tietoevry-kubrix-demo/kubrix-johnny-test
 createAppNamespace: true
 stages:
   - name: "dev"
-    targetClusterStage: "dev"
+    targetClusterStage: "dev001"
     requestedFreight:
     - origin:
         kind: Warehouse
@@ -12,7 +12,7 @@ stages:
       sources:
         direct: true
   - name: "test"
-    targetClusterStage: "test"
+    targetClusterStage: "test001"
     requestedFreight:
     - origin:
         kind: Warehouse
@@ -21,7 +21,7 @@ stages:
         stages:
         - test
   - name: "prod"
-    targetClusterStage: "prod"
+    targetClusterStage: "prod001"
     requestedFreight:
     - origin:
         kind: Warehouse
